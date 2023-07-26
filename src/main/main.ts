@@ -71,15 +71,17 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
     icon: getAssetPath('icon.png'),
+    width: 1366,
+    height: 768,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
+      devTools: false,
     },
   });
+  mainWindow.setMenuBarVisibility(false);
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 

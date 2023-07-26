@@ -1,0 +1,37 @@
+.LeftPanel {
+  align-self: flex-start;
+  width: 18.5vw;
+  min-width: min-content;
+  height: calc(100vh - 30px);
+  background-color: #132B50;
+}
+
+.MenuTabContainer {
+  display: flex;
+  height: 30px;
+  border-bottom: 1px solid #5A6F8D;
+}
+
+.Menu3DAssets {
+  padding: 8px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.Menu3DAssetsFilter {
+  flex: 0 1;
+  height: min-content;
+  padding: 8px;
+  background-color: #1D3C6A;
+  border: 2px solid #5A6F8D;
+  border-radius: 4px;
+}
+
+.Menu3DAssetsInventory {
+  margin-top: 8px;
+  flex: 1 1 auto;
+  background-color: #1D3C6A;
+  border: 2px solid #5A6F8D;
+  border-radius: 4px;
+}
